@@ -16,6 +16,8 @@ namespace MaxWord.Models
     }
     internal class Document
     {
+        public required string FileName { get; set; }
+
         private string _text;
 
         public string Text
@@ -28,7 +30,12 @@ namespace MaxWord.Models
             }
         }
 
+        public string RtfContent { get; set; }
+
         public Formates Form { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+        public DateTime ModifiedDate { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
