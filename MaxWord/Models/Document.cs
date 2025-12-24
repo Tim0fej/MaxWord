@@ -14,7 +14,7 @@ namespace MaxWord.Models
         pdf = 1,
         rtf = 2
     }
-    internal class Document
+    public class Document : INotifyPropertyChanged
     {
         public required string FileName { get; set; }
 
