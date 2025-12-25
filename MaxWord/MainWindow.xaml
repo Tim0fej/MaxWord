@@ -1,0 +1,117 @@
+﻿<Window x:Class="MaxWord.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MaxWord" Height="419" Width="800"
+        WindowStartupLocation="CenterScreen">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Background="#1d1a1e">
+            <MenuItem Header="Файл" Foreground="#dc6281" Click="MenuItem_Click">
+                <!--<MenuItem Header="Новый" Click="NewFile_Click" InputGestureText="Ctrl+N" Foreground="#dc6281"/>
+                <MenuItem Header="Открыть" Click="OpenFile_Click" InputGestureText="Ctrl+O" Foreground="#dc6281"/>
+                <MenuItem Header="Сохранить" Click="SaveFile_Click" InputGestureText="Ctrl+S" Foreground="#dc6281"/>
+                <MenuItem Header="Сохранить как..." Click="SaveAsFile_Click" Foreground="#dc6281"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Exit_Click" Foreground="#dc6281"/>-->
+            </MenuItem>
+            <MenuItem Header="Правка" Foreground="#dc6281" Click="MenuItem_Click_1">
+                <!--<MenuItem Header="Отменить" Click="Undo_Click" InputGestureText="Ctrl+Z" Foreground="#dc6281"/>
+                <MenuItem Header="Повторить" Click="Redo_Click" InputGestureText="Ctrl+Y" Foreground="#dc6281"/>
+                <Separator/>
+                <MenuItem Header="Вырезать" Click="Cut_Click" InputGestureText="Ctrl+X" Foreground="#dc6281"/>
+                <MenuItem Header="Копировать" Click="Copy_Click" InputGestureText="Ctrl+C" Foreground="#dc6281"/>
+                <MenuItem Header="Вставить" Click="Paste_Click" InputGestureText="Ctrl+V" Foreground="#dc6281"/>-->
+            </MenuItem>
+            <MenuItem Header="Формат" Foreground="#dc6281" Click="MenuItem_Click_2">
+                <!--<MenuItem Header="Шрифт..." Click="FontDialog_Click" Foreground="#dc6281"/>
+                <MenuItem Header="Цвет текста..." Click="TextColor_Click" Foreground="#dc6281"/>
+                <MenuItem Header="Выравнивание" Foreground="#dc6281">
+                    <MenuItem Header="По левому краю" Click="AlignLeft_Click" Foreground="#dc6281"/>
+                    <MenuItem Header="По центру" Click="AlignCenter_Click" Foreground="#dc6281"/>
+                    <MenuItem Header="По правому краю" Click="AlignRight_Click" Foreground="#dc6281"/>
+                </MenuItem>-->
+            </MenuItem>
+        </Menu>
+
+
+        
+        <ToolBarTray DockPanel.Dock="Top" Background="#1d1a1e">
+            <ToolBar Background="#1d1a1e">
+                <Button Click="NewFile_Click" ToolTip="Новый (Ctrl+N)" Background="#1d1a1e">
+                    <Button.Content>
+                        <Image Source="C:\Users\Admin\source\repos\MaxWord\MaxWord\Icon\NewFile.png" Width="16" Height="16"/>
+                    </Button.Content>
+                </Button>
+                <Button Click="OpenFile_Click" ToolTip="Открыть (Ctrl+O)" Background="#1d1a1e">
+                    <Image Source="C:\Users\Admin\source\repos\MaxWord\MaxWord\Icon\OpenFile.png" Width="16" Height="16"/>
+                </Button>
+                <Button Click="SaveFile_Click" ToolTip="Сохранить (Ctrl+S)" Background="#1d1a1e">
+                    <Image Source="C:\Users\Admin\source\repos\MaxWord\MaxWord\Icon\SaveFile.png" Width="16" Height="16"/>
+                </Button>
+                <Separator/>
+                <Button Click="Copy_Click" ToolTip="Копировать (Ctrl+C)" Background="#1d1a1e">
+                    <Image Source="C:\Users\Admin\source\repos\MaxWord\MaxWord\Icon\Copy.png" Width="16" Height="16"/>
+                </Button>
+                <Button Click="Paste_Click" ToolTip="Вставить (Ctrl+V)" Background="#1d1a1e">
+                    <Image Source="C:\Users\Admin\source\repos\MaxWord\MaxWord\Icon\Paste.png" Width="16" Height="16"/>
+                </Button>
+                <Separator/>
+                <ComboBox x:Name="FontFamilyCombo" Width="120" SelectionChanged="FontFamilyChanged" Background="#1d1a1e" Foreground="White">
+                    <ComboBoxItem>шрифт 1</ComboBoxItem>
+                    <ComboBoxItem>шрифт 2</ComboBoxItem>
+                </ComboBox>
+                <ComboBox x:Name="FontSizeCombo" Width="50" SelectionChanged="FontSizeChanged" Background="#1d1a1e" Foreground="White">
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>9</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem>11</ComboBoxItem>
+                    <ComboBoxItem>12</ComboBoxItem>
+                    <ComboBoxItem>14</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                    <ComboBoxItem>24</ComboBoxItem>
+                    <ComboBoxItem>28</ComboBoxItem>
+                    <ComboBoxItem>36</ComboBoxItem>
+                    <ComboBoxItem>48</ComboBoxItem>
+                    <ComboBoxItem>72</ComboBoxItem>
+                </ComboBox>
+                <Button Click="Bold_Click" ToolTip="Жирный (Ctrl+B)" Foreground="white">
+                    <TextBlock FontWeight="Bold">B</TextBlock>
+                </Button>
+                <Button Click="Italic_Click" ToolTip="Курсив (Ctrl+I)" Foreground="white">
+                    <TextBlock FontStyle="Italic">I</TextBlock>
+                </Button>
+                <Button Click="Underline_Click" ToolTip="Подчеркивание (Ctrl+U)" Foreground="white">
+                    <TextBlock TextDecorations="Underline">U</TextBlock>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+
+
+        
+        <StatusBar DockPanel.Dock="Bottom" Background="#1d1a1e">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText" Foreground="#dc6281">Готово</TextBlock>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <TextBlock x:Name="PositionText" Foreground="#dc6281">Строка: 1, Колонка: 1</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+
+
+        
+        <RichTextBox x:Name="Editor" 
+                     Foreground="White"
+                     TextChanged="Editor_TextChanged"
+                     VerticalScrollBarVisibility="Auto"
+                     Background="#1d1a1e">
+                     
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+        </RichTextBox>
+    </DockPanel>
+</Window>
