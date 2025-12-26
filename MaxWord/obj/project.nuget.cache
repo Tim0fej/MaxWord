@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bSr3wAoR+Zw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Олеся\\source\\repos\\MaxWord\\MaxWord\\MaxWord.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Олеся\\.nuget\\packages\\gong-wpf-dragdrop\\4.0.0\\gong-wpf-dragdrop.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

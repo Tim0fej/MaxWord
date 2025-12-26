@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|c:\\users\\\u043E\u043B\u0435\u0441\u044F\\source\\repos\\maxword\\maxword\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|solutionrelative:maxword\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|c:\\users\\\u043E\u043B\u0435\u0441\u044F\\source\\repos\\maxword\\maxword\\startwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|solutionrelative:maxword\\startwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|c:\\users\\\u043E\u043B\u0435\u0441\u044F\\source\\repos\\maxword\\maxword\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0D31FFF-2B42-4840-B86C-ED61522687F1}|MaxWord\\MaxWord.csproj|solutionrelative:maxword\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "MaxWord\\Models\\Document.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\Models\\Document.cs",
+              "RelativeToolTip": "MaxWord\\Models\\Document.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T10:08:15.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StartWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\StartWindow.xaml",
+              "RelativeDocumentMoniker": "MaxWord\\StartWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\StartWindow.xaml",
+              "RelativeToolTip": "MaxWord\\StartWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-26T10:03:17.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MaxWord\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0441\u044F\\source\\repos\\MaxWord\\MaxWord\\MainWindow.xaml",
+              "RelativeToolTip": "MaxWord\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-26T10:03:10.877Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

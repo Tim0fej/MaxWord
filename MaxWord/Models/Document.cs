@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MaxWord.Models
 {
-    enum Formates
+    public enum Formates
     {
         txt = 0,
         pdf = 1,
@@ -19,6 +19,10 @@ namespace MaxWord.Models
         public required string FileName { get; set; }
 
         private string _text;
+        private Formates form;
+        private DateTime createdDate;
+        private DateTime modifiedDate;
+        private string rtfContent;
 
         public string Text
         {
@@ -30,12 +34,48 @@ namespace MaxWord.Models
             }
         }
 
-        public string RtfContent { get; set; }
+        public string RtfContent
+        {
+            get { return rtfContent; }
+            set
+            {
+                rtfContent = value;
+                OnPropertyChanged();
+            }
+        
+        }
 
-        public Formates Form { get; set; }
+        public string FormString => Form.ToString();
 
-        public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public Formates Form 
+        {
+            get { return form; }
+            set 
+            {
+                form = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(FormString));
+            } 
+        }
+
+        public DateTime CreatedDate 
+        { 
+            get { return createdDate; }
+            set 
+            { 
+                createdDate = value;
+                OnPropertyChanged();
+            }
+        }
+        public DateTime ModifiedDate 
+        { 
+            get { return modifiedDate; }
+            set 
+            {
+                modifiedDate = value;
+                OnPropertyChanged();
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")

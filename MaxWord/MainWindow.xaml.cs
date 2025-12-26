@@ -23,7 +23,7 @@ namespace MaxWord
 
         private void NewFile_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
         private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
